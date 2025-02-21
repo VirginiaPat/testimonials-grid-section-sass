@@ -1,0 +1,95 @@
+%text-preset-1 {
+  font-weight: 600;
+  font-size: px-to-rem(20px);
+  line-height: 1.2;
+}
+
+%text-preset-2 {
+  font-weight: 500;
+  font-size: px-to-rem(13px);
+  line-height: 1.1;
+}
+
+%text-preset-3 {
+  font-weight: 500;
+  font-size: px-to-rem(13px);
+  line-height: 1.4;
+}
+
+%text-preset-4 {
+  font-weight: 500;
+  font-size: px-to-rem(11px);
+  line-height: 1.1;
+}
+
+.person__name {
+  @extend %text-preset-2;
+
+  &-white {
+    color: $color-white;
+  }
+
+  &-grey500 {
+    color: $color-grey500;
+  }
+}
+
+.person__status {
+  @extend %text-preset-4;
+
+  &-purple50 {
+    color: $color-purple50;
+  }
+
+  &-grey300 {
+    color: $color-grey300;
+  }
+
+  &-grey400 {
+    color: $color-grey400;
+  }
+
+  &-white {
+    color: $color-white;
+  }
+}
+
+.text__bold {
+  @extend %text-preset-1;
+
+  &-white {
+    color: $color-white;
+  }
+
+  &-grey500 {
+    color: $color-grey500;
+  }
+
+  &-grey200 {
+    color: $color-grey200;
+  }
+}
+
+.text__medium {
+  @extend %text-preset-3;
+
+  &-purple50 {
+    color: $color-purple50;
+  }
+
+  &-grey100 {
+    color: $color-grey100;
+  }
+
+  &-grey400 {
+    color: $color-grey400;
+  }
+}
+
+blockquote > .testimonial__text__medium::before {
+  content: '" ';
+}
+
+blockquote > .testimonial__text__medium::after {
+  content: '" ';
+}
